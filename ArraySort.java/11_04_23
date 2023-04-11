@@ -1,0 +1,37 @@
+package arrays;
+
+import java.lang.reflect.Array;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.Scanner;
+
+public class ArraySort {
+
+	public static void main(String[] args) {
+		
+		int arr1[] =new int[5];
+		Scanner sc=new Scanner(System.in);
+		
+		System.out.println("Enter the element of array:");
+		for(int i=0;i<arr1.length;i++)
+		{
+			arr1[i]=sc.nextInt();
+			
+		}
+		System.out.println("sorting element of array:(Ascending)");
+		Arrays.sort(arr1);
+		for(int var:arr1) {
+			System.out.print(var+" ");
+			
+		}System.out.println();
+		Integer arr2[]= {100,99,23,34,45};
+		System.out.println("sorting element of array:(Descending)");
+		Object collection;
+		Arrays.sort(arr2,Collections.reverseOrder());
+		for(int var:arr2) {
+			System.out.println(var+" ");
+			
+		}
+	}
+
+}
